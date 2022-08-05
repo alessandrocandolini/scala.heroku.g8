@@ -12,11 +12,8 @@ lazy val root = project
   .settings(commonSettings)
   .settings(
     name := "$project_name$",
-    version := "$version$",
+    version := "0.1",
     scalaVersion := "$scala_version$",
-    assembly / test := Def
-      .sequential(Test / test, IntegrationTest / test)
-      .value,
     assembly / assemblyMergeStrategy := customMergeStrategy,
     assembly / assemblyJarName := "$jar_filename$",
     scalafmtOnCompile := true,
