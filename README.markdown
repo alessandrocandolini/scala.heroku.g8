@@ -5,6 +5,25 @@
 
 A [Giter8][g8] template for generating a scala3 / typelevel stack project ready to be deployed on Heroku using github actions 
 
+## Usage 
+
+Interactively via sbt: 
+
+```
+sbt new alessandrocandolini/scala.heroku.g8
+```
+
+Not interactively via sbt:
+```
+sbt new alessandrocandolini/scala.heroku.g8  --branch=main --name="my_project"
+```
+
+Alternatively, using `g8`
+```
+g8 alessandrocandolini/scala.heroku.g8  --branch=main --name="my_project"
+```
+
+
 Template license
 ----------------
 Written in 2022 by A. Candolini <alessandro.candolini@gmail.com>
